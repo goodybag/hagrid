@@ -1,0 +1,8 @@
+function({{#each idVars}}{{{this}}, {{/each}}query, callback){
+  if (typeof query === 'function'){
+    callback = query;
+    query = {};
+  }
+
+  utils.get({{#each urlParts}}{{#if this.isUrl}}'{{this.part}}'{{else}}{{this.part}}{{/if}} + utils.query(query), callback);
+}

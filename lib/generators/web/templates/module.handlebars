@@ -1,0 +1,12 @@
+define(function(require){
+  var
+    req     = require('reqwest')
+  , config  = require('./config'){{#if variables}}
+  {{#each variables}}
+  , {{{this.name}}} = {{{this.value}}}
+  {{/each}}{{/if}}
+  ;{{#if body}}
+  {{{body}}}{{/if}}
+
+  return {{{return}}};
+});
