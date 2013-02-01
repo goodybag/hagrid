@@ -1,0 +1,17 @@
+{
+  "name": "hagrid",
+  "version": "0.0.1",
+  "description": "API client generators for magic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/goodybag/hagrid.git"
+  },
+  "author": "John Fawcett",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "206d685749c1011266148b1c6d8a7e8cc9a5ada1"
+}
