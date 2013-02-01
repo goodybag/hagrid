@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git://github.com/goodybag/hagrid.git"
   },
+  "dependencies": {
+    "request": "2.12.x"
+  },
   "author": "John Fawcett",
   "license": "BSD",
   "readmeFilename": "README.md",
