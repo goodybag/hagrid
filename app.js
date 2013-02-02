@@ -2,8 +2,8 @@ var
   hagrid = require('./')
 
 , options = {
-    buildDir: '/goodybag/api-client-generator/build/web'
-  , documentPath: 'http://magic.staging.goodybag.com'
+    buildDir: process.cwd() + '/build/web'
+  , documentPath: 'http://localhost:3000'
   }
 ;
 

@@ -11,7 +11,8 @@
     "url": "git://github.com/goodybag/hagrid.git"
   },
   "dependencies": {
-    "request": "2.12.x"
+    "request": "2.12.x",
+    "handlebars": "1.0.x"
   },
   "author": "John Fawcett",
   "license": "BSD",
