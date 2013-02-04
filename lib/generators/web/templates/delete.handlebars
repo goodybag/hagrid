@@ -1,0 +1,3 @@
+function({{#each idVars}}{{this}}, {{/each}} callback){
+  utils.delete({{#each urlParts}}{{#if this.isUrl}}'/{{this.part}}/'{{else}}{{this.part}} {{/if}} + {{/each}}, callback);
+}

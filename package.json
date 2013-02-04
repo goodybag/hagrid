@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "request": "2.12.x",
-    "handlebars": "1.0.x"
+    "handlebars": "1.0.x",
+    "wrench": "1.4.x"
   },
   "author": "John Fawcett",
   "license": "BSD",

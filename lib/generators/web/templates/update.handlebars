@@ -1,0 +1,8 @@
+function({{#each idVars}}{{this}}, {{/each}}data, callback){
+  if (typeof data === 'function'){
+    callback = data;
+    data = {};
+  }
+
+  utils.update({{#each urlParts}}{{#if this.isUrl}}'/{{this.part}}/'{{else}}{{this.part}} {{/if}} + {{/each}}, data, callback);
+}

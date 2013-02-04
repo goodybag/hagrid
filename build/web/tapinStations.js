@@ -13,7 +13,15 @@ list: function(query, callback){
   utils.get('/businesses/' + utils.query(query), callback);
 }
 
-, create: function(){}
+, create: function(data, callback){
+  if (typeof data === 'function'){
+    callback = data;
+    data = {};
+  }
+
+  utils.post('/businesses/' + , data, callback);
+}
+
 
 , get: function(businessId, query, callback){
   if (typeof query === 'function'){
@@ -24,8 +32,19 @@ list: function(query, callback){
   utils.get('/businesses/' + businessId  + utils.query(query), callback);
 }
 
-, update: function(){}
-, del: function(){}
+, update: function(businessId, data, callback){
+  if (typeof data === 'function'){
+    callback = data;
+    data = {};
+  }
+
+  utils.update('/businesses/' + businessId  + , data, callback);
+}
+
+, del: function(businessId,  callback){
+  utils.delete('/businesses/' + businessId  + , callback);
+}
+
 
 , locations: {
 list: function(businessId, query, callback){
